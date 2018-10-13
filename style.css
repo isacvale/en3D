@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400');
+
+:root{
+  --color-0: #e55b00;
+  --color-1: #ffffff;
+  --color-2: #001e4d;
+  --color-3: #ffecba;
+  --font-title: 100 32px/100% 'Roboto', sans-serif;
+  --font-menu: 100 22px/100% 'Roboto', sans-serif;
+}
+
+html, body, main, header{
+  padding: 0;
+  margin:0;
+}
+
+
+/*Creating the header.*/
+
+header{
+  min-height: 140px;
+  height: 10vh;
+  width: 100%;
+  background-color: var( --color-1 );
+  margin:0;
+  border-bottom: 8px solid var( --color-2 );
+  position: relative;
+  display: flex;
+  align-items: center;
+  align-content: stretch;
+}
+
+header>img{
+  margin: 0 0 0 20px;
+}
+h1{
+  font: var( --font-title );
+  display: inline-block;
+  color: var( --color-0 );
+  padding-top: 24px;
+  margin: 0 10px;
+}
+.menu{
+  height:100%;
+  display: inline-block;
+  font: var( --font-menu );
+  color: var( --color-0 );
+  margin: 0;
+  padding: 0;
+}
+.menu>li{
+  display: inline-block;
+  padding: 20px 5px;
+  line-height: 140px;
+}
